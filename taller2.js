@@ -2,8 +2,17 @@
 //const percentageDiscount = 15;
 
 function calcPercentagePriceToPay(price, percentageDiscount){
-    const percentagePriceToPay = 100 - percentageDiscount;
-    const discountPrice = (price * percentagePriceToPay)/100;
+    if (percentageDiscount < 0 || percentageDiscount > 100 ){
+        var discountPrice = `Ingrese  un porcentaje válido`;
+        //return discountPrice
+    
+    } else {
+        const percentagePriceToPay = 100 - percentageDiscount;
+        var discountPrice = (price * percentagePriceToPay)/100;
+        //return discountPrice
+
+    }
+    
 
     return discountPrice;
 };
