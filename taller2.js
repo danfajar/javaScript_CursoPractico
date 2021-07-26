@@ -4,13 +4,11 @@
 function calcPercentagePriceToPay(price, percentageDiscount){
     if (percentageDiscount < 0 || percentageDiscount > 100 ){
         var discountPrice = `Ingrese  un porcentaje válido`;
-        //return discountPrice
-    
+            
     } else {
         const percentagePriceToPay = 100 - percentageDiscount;
         var discountPrice = (price * percentagePriceToPay)/100;
-        //return discountPrice
-
+               
     }
     
 
