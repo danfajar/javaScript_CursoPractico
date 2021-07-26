@@ -28,7 +28,7 @@ function triangleArea (base, height){
 // var triSide2 = parseFloat(prompt("Ingresa el lado 2 del Triangulo: "));
 // var base = parseFloat(prompt("Ingresa la Base del Triangulo: "));
 
-//Semiperimetro del triamgulo: Te permite hallar las alturas de un triángulo mediante sus lados;
+//Semiperimetro del triángulo: Te permite hallar las alturas de un triángulo mediante sus lados;
 var semiperimeter = (triSide1 + triSide2 + base)/2
 var height = (2/base) * Math.sqrt(semiperimeter*(semiperimeter - triSide1)*(semiperimeter- triSide2)*(semiperimeter-base))
 
